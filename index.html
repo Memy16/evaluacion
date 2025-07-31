@@ -3,19 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>🎸 Rock Fest</title>
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <header>
-        
+            <nav>
+                <div class="title">
+                    <a href="./index.html">🎸 Rock Fest</a>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="./index.html"></a>Inicio</li>
+                        <li><a href="#"></a>Entradas</li>
+                        <li><a href="#"></a>Contacto</li>
+                    </ul>
+                </div>
+            </nav>
         </header>
         <main>
-        
+            <section>
+                <h1>🎸 Reserva 2025 🎸</h1>
+                <form id="formulario">
+                    <label for="name">Nombre:</label><input type="text" id="name">
+                    <label for="cantentradas">Cantidad de Entradas:</label><input type="number" id="cantentradas">
+                    <label for="tipoent">Tipo de Entrada:</label>
+                    <select name="tipoent" id="tipoent">
+                        <option value="general">General - $1000</option>
+                        <option value="vip">VIP - $2000</option>
+                    </select>
+                    <label for="cod">Código de Descuento:</label>
+                    <input type="text" id="cod" placeholder="Ingresa ROCK10">
+                    <button type="submit" id="btn-calcular">Calcular Total</button>
+                </form>
+                <div id="mensajeError" style="background-color: red;"></div>
+                <div id="estadoreserva" style="background-color: green;"></div>
+                <div id="mensajefinal" style="background-color: rgb(43, 152, 195);"></div>
+            </section>
         </main>
-        <footer>
-        
-        </footer>
         <script src="./js/app.js"></script>
     </body>
 </html>
